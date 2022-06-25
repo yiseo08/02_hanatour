@@ -1,0 +1,273 @@
+@charset "utf-8";
+/* #wrap */
+#wrap {
+    position: relative;
+    width: 100%;
+    min-width: 1220px;
+}
+
+/* 상단 배너 */
+#topBn {
+    position: relative;
+    background-color: #fef2f4;
+}
+.topBnList {
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+}
+.topBnList figcaption {
+    display: none;
+}
+.topBnClose {
+    position: absolute;
+    top: 32px;
+    right: 50%;
+    margin-right: -600px;
+}
+.topBnClose a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/topbn_close.png);
+    text-indent: -99999px;
+}
+
+/* 헤더 영역 */
+#header {
+    position: relative;
+    border-bottom: 1px solid #141416;
+}
+#header::before {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+.header_in {
+    position: relative;
+    width: 1200px;
+    height: 170px;
+    margin: 0 auto;
+}
+.header_utill {
+    padding: 14px 0;
+}
+.header_utill ul {
+    display: flex;
+    justify-content: end;
+}
+.header_utill li {
+    margin-left: 14px;
+}
+.header_utill li a {
+    font-size: 12px;
+    color: #333;
+}
+.header_utill li a:hover {
+    color: #5e2bb8;
+}
+
+.header_ls {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 30px;
+}
+.logo a {
+    display: block;
+    width: 150px;
+    height: 30px;
+    background-image: url(../img/logo.png);
+    text-indent: -999999px;
+}
+.header_search {
+    width: 406px;
+    height: 40px;
+    border: 2px solid #111;
+    border-radius: 22px;
+    margin-right: 40px;
+}
+.header_search fieldset {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 0 20px;
+}
+.header_search input {
+    width: 330px;
+    height: 40px;
+    border: none;
+}
+.header_search input:focus {
+    outline: none; /* :focus , 인풋태그가 선택되었을 때 선이 나타나는 것을 지웠다. */
+} 
+.header_search button {
+    width: 30px;
+    height: 40px;
+    background-image: url(../img/ico-search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -999999px;
+}
+/* 헤더 키워드 */
+.header_keyword {
+    position: relative;
+    width: 100%;
+}
+.header_keyword .hks_hot,
+.header_keyword_list p span {
+    display: inline-block;
+    padding: 0 4px;
+    border: 1px solid #5e2bb8;
+    border-radius: 4px 0 4px 4px;;
+    margin-right: 5px;
+    background-color: #fff;
+    color: #5e2bb8;
+    font-size: 10px;
+    font-weight: 900;
+    line-height: 17px;
+}
+.header_keyword .hks_local {
+    color: #333;
+}
+.header_keyword_list {
+    position: absolute;
+    top: -13px;
+    left: -21px;
+    width: 186px;
+    background-color: #fff; 
+    display: none; 
+    border: 1px solid #111;
+}
+.header_keyword:hover .header_keyword_list {
+    display: block;
+}  
+.header_keyword_list p {
+    padding: 12px 20px 14px 20px;
+    background-color: #f3f3f3; 
+}
+.header_keyword_list ul {
+    padding: 10px 20px 17px 20px;
+    line-height: 25px;
+}
+.header_keyword_list li a {
+    font-size: 13px;
+    color: #141416;
+}
+.header_keyword_list li a:hover {
+    text-decoration: underline;
+}
+/* 헤더 아이콘 */
+.header_icon {
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+.header_icon ul {
+    display: flex;
+}
+.header_icon li {
+    position: relative;
+    margin-left: 24px;
+}
+.header_icon li > a {
+    display: block;
+    padding-top: 27px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    color: #333;
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+.header_icon .hi_01 > a {
+    background-image: url(../img/ico-mymenu.png);
+}
+.header_icon .hi_02 > a {
+    background-image: url(../img/ico-reservationhistory.png);
+}
+.header_icon .hi_03 a {
+    background-image: url(../img/ico-haeder-choice.png);
+    width: 24px;
+    text-align: center;
+}
+.header_icon li:hover > a {
+    color:#5e2bb8;
+}
+.header_icon .hi_01:hover > a {
+    background-image: url(../img/ico-mymenu_.png);
+}
+.header_icon .hi_02:hover > a {
+    background-image: url(../img/ico-reservationhistory_.png);
+}
+.header_icon .hi_03:hover > a {
+    background-image: url(../img/ico-haeder-choice_.png);
+    background-position: center 1px;
+}
+.header_icon .hi_01 .info {
+    position: absolute;
+    width: 190px;
+    left: -70px;
+    border: 1px solid #111;
+    background-color: #fff;
+    display: none;
+}
+.header_icon .hi_01:hover .info {
+    display: block;
+}
+.header_icon .hi_01 .info::before {
+    position: absolute;
+    content: '';
+    width: 11px;
+    height: 11px;
+    border-top: 1px solid #111;
+    border-left: 1px solid #111 ;
+    top: -6.8px;
+    left: 88px;
+    background-color: #f3f3f3;
+    transform: rotate(45deg);
+}
+.header_icon .hi_01 .info .info_01 {
+    padding: 14px 20px;
+    background-color: #f3f3f3;
+    font-size: 13px;
+    color: #111;
+}
+.header_icon .hi_01 .info_01 span {
+    color: #5e2bb8;
+}
+.header_icon .hi_01 .info_02 {
+    padding: 14px 20px 16px 20px;
+    margin: 8px 0 8px 0;
+}
+.header_icon .hi_01 .info_02_login a {
+    display: block;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 2px;
+    font-size: 12px;
+    text-align: center;
+    color: #aaa;
+    font-weight: 400;
+}
+.header_icon .hi_01 .info_02_signin a {
+    display: block;
+    border: 1px solid #5e2bb8;
+    border-radius: 4px;
+    padding: 2px;
+    margin-top: 9px;
+    font-size: 12px;
+    text-align: center;
+    color: #5e2bb8;
+    font-weight: 300;
+}
+.header_icon .hi_01 .info_02_login a:hover {
+    border: 1px solid #111;
+}
+
+
