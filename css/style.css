@@ -119,6 +119,7 @@
 .header_keyword {
     position: relative;
     width: 100%;
+    z-index: 100;
 }
 .header_keyword .hks_hot,
 .header_keyword_list p span {
@@ -270,4 +271,96 @@
     border: 1px solid #111;
 }
 
-
+/* 헤더 메뉴 영역 */
+.gnb_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    margin-top: 21px;
+}
+.gnb_L {
+    display: flex;
+}
+.all_menu a {
+    display: block;
+    padding: 0px 25px 0px 58px;
+    margin: 0 0 1px 0;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background-image: url(../img/ico-hamburgermenu.png);
+    background-repeat: no-repeat;
+    background-position: 33px center;
+    line-height: 55px;
+    font-size: 15px;
+    color: #111;
+}
+.menu {
+    position: relative;
+}
+.menu ul {
+    display: flex;
+    padding-left: 15px;
+}
+.menu li a {
+    display: block;
+    line-height: 55px;
+    padding: 0 15px;
+    font-size: 15px;
+    color: #111;
+}
+/* 메뉴들이랑 서브 메뉴에 마우스 올라갔을 때, 호버 됐을 때 글자 보라색, 밑에 생기는 보라색 바 만드는 거 */
+.menu > ul > li:hover > a,
+.menu .submenu li:hover a {
+    position: relative;
+    color: #5e2bb8;
+}
+.menu > ul > li:hover > a::after,
+.menu .submenu li:hover a::after {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: -1px;
+    content: '';
+    height: 2px;
+    background-color: #5e2bb8;
+}
+.menu li .submenu {
+    position: absolute;
+    top: 59px;
+    width: 1200px;    
+    display: none;
+}
+.menu li:hover .submenu {
+    display: block;
+}
+.menu .menu_1 .submenu {
+    left: -10px;
+}
+.menu .menu_2 .submenu {
+    left: 0px;
+}
+.menu .menu_4 .submenu {
+    left: 220px;
+}
+.menu li .submenu ul {
+    padding-top: 1px;
+}
+.menu li .sub a {
+    font-size: 14px;
+    color: #333;
+    line-height: 48px;
+}
+.gnb_R ul {
+    display: flex;
+}
+.gnb_R li {
+    margin-left: 18px;
+}
+.gnb_R li a {
+    font-size: 15px;
+    color: #111;
+}
+.gnb_R li a:hover {
+    color: #5e2bb8;
+}
