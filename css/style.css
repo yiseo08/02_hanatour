@@ -364,3 +364,78 @@
 .gnb_R li a:hover {
     color: #5e2bb8;
 }
+.header_quick {
+    position: fixed;
+    right: 0;
+    top: 260px;
+    width: 118px;
+    border: 1px solid #111;
+    background-color: #fff;
+}
+.open_chat {
+    border-bottom: 1px solid #111;
+}
+.open_chat a {
+    display: block;
+    padding-top: 70px;
+    padding-bottom: 20px ;
+    text-align: center;
+    font-size: 13px;
+    background-image: url(../img/ico-chatting.png);
+    background-repeat: no-repeat;
+    background-position: center 23px;
+    color: #111;
+}
+.button_recent {
+    border-bottom: 1px solid #ccc;
+    background-color: #f3f3f3;
+}
+.button_recent a {
+    display: block;
+    padding: 13px 15px 13px 6px;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    letter-spacing: -1px;
+}
+.button_recent a::after {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    width: 7px;
+    height: 7px;
+    margin-top: 3px;
+    margin-left: 9px;
+    border-right: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    transform: rotate(45deg);
+}
+.recent_list {
+    display: none;
+    border-bottom: 1px solid #ccc;
+    padding: 40px 0 40px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    background-color: #fff;
+}
+.button_go_top a {
+    display: block;
+    font-size: 13px;
+    color: #333;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    background-color: #f3f3f3;
+}
+.button_go_top a::before {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    width: 0;
+    height: 0;
+    margin-top: 6px;
+    margin-right: 6px;
+    border-bottom: 7px solid #4b4b4b;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
